@@ -20,7 +20,7 @@ export default function Nav() {
             <Link to='#' className='close-button'>
               <AiIcons.AiOutlineClose />
             </Link>
-            <Link to='/home' className='nav-text'>
+            <Link to='/' className='nav-text'>
               Home
             </Link>
             <Link to='/aboutme' className='nav-text'>

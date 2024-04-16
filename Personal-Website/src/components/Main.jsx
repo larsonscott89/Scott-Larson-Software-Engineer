@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Homephoto from '../assets/PersonalWebsite:homephoto.png'
 import Header from './Header'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
@@ -11,12 +10,8 @@ export default function Main() {
   return (
     <div>
       <Header />
-      <div>
-      <h1>Home</h1>
-      <img className='homephoto' src={Homephoto} alt='Home Page Photo'/>
-    </div>
       <Routes>
-        <Route path='/home' element={<Home />}/>
+        <Route path='/' element={<Home />}/>
         <Route path='/aboutme' element={<AboutMe/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/contactme' element={<ContactMe/>}/>
