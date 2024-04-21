@@ -17,7 +17,7 @@ import project2_image2 from '../assets/Ultimate Anime API Character list.png'
 import project2_image3 from '../assets/Ultimate Anime API Anime List.png'
 
 import project3_image1 from '../assets/Gaming elite Retro page.png'
-import project3_image2 from '../assets/Gaming Elite Landing Page.png'
+import project3_image2 from '../assets/Gaming Elite landing page.png'
 import project3_image3 from '../assets/Gaming Elite Game list.png'
 
 import project4_image1 from '../assets/BCS-Darts landing page.png'
