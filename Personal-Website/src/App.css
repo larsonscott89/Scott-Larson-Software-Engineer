@@ -242,4 +242,119 @@ body {
         background-color: rgba(181, 181, 169, 0.5);
         margin: 20px 0;
       }
+/* Footer */
+      footer {
+        background-color: #565656;
+        color: rgb(181, 181, 169);
+        padding: 20px 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+      }
 
+      .section-title,
+      .team-container,
+      .social-links {
+        flex: 1;
+      }
+
+      .project-github {
+        margin-left: 20px;
+      }
+
+      .team-container {
+        margin-left: 20px;
+      }
+
+      .social-links {
+        margin-right: 20px;
+      }
+
+      .section-title h4,
+      .social-links {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 0.8em;
+      }
+
+      .team-container h3 {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 1em;
+      }
+
+      .team-container h4 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 0.8em;
+      }
+
+      footer a {
+        color: rgb(181, 181, 169);
+        text-decoration: underline;
+        font-weight: 300;
+      }
+
+      .team-members-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .divider {
+        border-top: 1px solid rgb(181, 181, 169);
+        height: 100px;
+        margin: 0;
+      }
+
+      .linkedin {
+        height: 6vh;
+        width: 3.5vw;
+      }
+
+/* Contact Me */
+      .contact-page {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .contact-page h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .contact-page p {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .meeting-options {
+        margin-top: 30px;
+      }
+
+      .meeting-options a {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 22px;
+      }
+
+      .meeting-options a:hover {
+        background-color: #0056b3;
+      }
+
+      .meeting-options p {
+        font-size: 22px;
+        margin-bottom: 50px;
+      }

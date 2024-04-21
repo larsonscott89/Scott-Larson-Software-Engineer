@@ -21,7 +21,6 @@ export default function Main() {
           <Route path='/contactme' element={<ContactMe/>}/>
         </Routes>
       </SpotlightEffectWrapper>
-      <Footer />
     </div>
   )
 }
