@@ -419,6 +419,11 @@ body {
         }
       
         /* Projects Styles */
+
+        .projects-intro {
+          font-size: 20px;
+        }
+
         .projects-container {
           text-align: center;
           height: 100%;
@@ -437,21 +442,25 @@ body {
           flex: 1 1 100%;
           margin-top: 10px;
           margin-right: 0;
-          font-size: 18px;
+          font-size: 20px;
         }
       
         .swiper-container {
           width: 100vw;
-          height: 270px;
-          margin-bottom: 30px;
+          height: auto; /* Adjusted height to accommodate variable image height */
+          max-height: auto; /* Set a maximum height to maintain consistency */
+          margin-bottom: 50px;
+          overflow: hidden; /* Ensure content within swiper container is clipped */
         }
       
         .swiper-slide img {
-          width: 80%;
-          height: 19rem;
+          width: auto; /* Adjusted to maintain aspect ratio */
+          max-width: 100%; /* Ensures image does not exceed container width */
+          height: auto; /* Automatically adjusts height to maintain aspect ratio */
+          max-height: 100%; /* Ensures image does not exceed container height */
           border: 1px solid rgb(181, 181, 169);
           border-radius: 2rem;
-          object-fit: cover;
+          object-fit: cover; /* Ensures image covers entire slide */
         }
       
         .slider-controler .swiper-button-next {

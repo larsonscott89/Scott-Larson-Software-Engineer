@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css'
@@ -25,6 +25,76 @@ import project4_image2 from '../assets/BCS-Darts team sign-up.png'
 import project4_image3 from '../assets/BCS-Darts sign-up.png'
 
 export default function Projects() {
+  const defaultSwiperSettings = {
+    effect: 'coverflow',
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    loop: true,
+    initialSlide: 0,
+    slidesPerView: 3,
+    spaceBetween: -400,
+    coverflowEffect: {
+      rotate: 90,
+      stretch: -200,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      clickable: true,
+    },
+    modules: [EffectCoverflow, Pagination, Navigation],
+    autoplay: { delay: 2500, disableOnInteraction: false },
+    className: 'swiper-main',
+  };
+
+  const [swiperSettings, setSwiperSettings] = useState(defaultSwiperSettings);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 738) {
+        setSwiperSettings({
+          effect: 'coverflow',
+          centeredSlides: true,
+          centeredSlidesBounds: true,
+          loop: true,
+          initialSlide: 0,
+          slidesPerView: 1,
+          spaceBetween: -300,
+          coverflowEffect: {
+            rotate: 90,
+            stretch: 100,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          },
+          pagination: { el: '.swiper-pagination', clickable: true },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+          },
+          modules: [EffectCoverflow, Pagination, Navigation],
+          autoplay: { delay: 2500, disableOnInteraction: false },
+          className: 'swiper-main',
+        });
+      } else {
+        setSwiperSettings(defaultSwiperSettings);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
+
+
   return (
     <div className='projects-container'>
       <div className='title-label'>
@@ -45,52 +115,27 @@ export default function Projects() {
           <h5>"Bartenders Best Friend" is your go-to solution for those moments when you find yourself at a loss for what to order at a restaurant or bar. Leveraging an API call alongside HTML, CSS, and JavaScript, this project empowers users to effortlessly search for a drink either by its name or by specifying a particular type of liquor they desire. Whether you're craving a classic cocktail or exploring new flavors, Bartenders Best Friend provides a curated selection of drinks to suit every taste and occasion.</h5>
         </div>
         <div className='swiper-container'>
-          <Swiper
-            effect={'coverflow'}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            loop={true}
-            initialSlide={0}
-            slidesPerView={3}
-            spaceBetween={-400}
-            coverflowEffect={{
-              rotate: 90,
-              stretch: -200,
-              depth: 100,
-              modifier: 2,
-              slideShadows: true, 
-            }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="swiper-main"
-          >
-            <SwiperSlide>
-              <img src={project1_image1} alt='Landing Page'/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={project1_image2} alt='Drink List'/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={project1_image3} alt='Drink Details'/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={project1_image1} alt='Landing Page'/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={project1_image2} alt='Drink List'/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={project1_image3} alt='Drink Details'/>
-            </SwiperSlide>
+        <Swiper {...swiperSettings}>
+            <div className='photo-media'>
+              <SwiperSlide>
+                <img src={project1_image1} alt='Landing Page'/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={project1_image2} alt='Drink List'/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={project1_image3} alt='Drink Details'/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={project1_image1} alt='Landing Page'/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={project1_image2} alt='Drink List'/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={project1_image3} alt='Drink Details'/>
+              </SwiperSlide>
+            </div>
             <div className="slider-controler">
               <div className="swiper-button-prev slider-arrow">
                 <ion-icon name="arrow-back-outline"></ion-icon>
@@ -115,34 +160,7 @@ export default function Projects() {
           <h5>"Ultimate Anime API" is a dynamic website showcasing the seamless integration of JavaScript components on the front-end with a robust Express, MongoDB, and Node.js backend. I've implemented RESTful API fetch calls for CRUD operations, rigorously tested backend routes using Postman, and ensured data integrity with Mongoose-defined schemas for MongoDB collections. This project represents a harmonious blend of front-end and back-end technologies, delivering a seamless user experience.</h5>
         </div>
         <div className='swiper-container'>
-          <Swiper
-            effect={'coverflow'}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            loop={true}
-            initialSlide={0}
-            slidesPerView={3}
-            spaceBetween={-400}
-            coverflowEffect={{
-              rotate: 90,
-              stretch: -200,
-              depth: 100,
-              modifier: 2,
-              slideShadows: true, 
-            }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="swiper-main"
-          >
+        <Swiper {...swiperSettings}>
             <SwiperSlide>
               <img src={project2_image1} alt='Landing Page'/>
             </SwiperSlide>
@@ -187,34 +205,7 @@ export default function Projects() {
           <h5>Through meticulous testing and debugging, I ensured Gaming Elite maintains high-quality standards and optimal performance. This project embodies our commitment to excellence in technology and commerce, tailored for the gaming community.</h5>
         </div>
         <div className='swiper-container'>
-          <Swiper
-            effect={'coverflow'}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            loop={true}
-            initialSlide={0}
-            slidesPerView={3}
-            spaceBetween={-400}
-            coverflowEffect={{
-              rotate: 90,
-              stretch: -200,
-              depth: 100,
-              modifier: 2,
-              slideShadows: true, 
-            }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="swiper-main"
-          >
+        <Swiper {...swiperSettings}>
             <SwiperSlide>
               <img src={project3_image1} alt='Landing Page'/>
             </SwiperSlide>
@@ -266,34 +257,7 @@ export default function Projects() {
           <h5>BCS Darts exemplifies my proficiency in leveraging the MERN stack to develop robust applications tailored to specific user needs. Thank you for considering my work.</h5>
         </div>
         <div className='swiper-container'>
-          <Swiper
-            effect={'coverflow'}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            loop={true}
-            initialSlide={0}
-            slidesPerView={3}
-            spaceBetween={-400}
-            coverflowEffect={{
-              rotate: 90,
-              stretch: -200,
-              depth: 100,
-              modifier: 2,
-              slideShadows: true, 
-            }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="swiper-main"
-          >
+        <Swiper {...swiperSettings}>
             <SwiperSlide>
               <img src={project4_image1} alt='Landing Page'/>
             </SwiperSlide>
