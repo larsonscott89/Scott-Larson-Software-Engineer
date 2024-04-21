@@ -183,7 +183,7 @@ export default function Projects() {
         <div className='project-description-container'>
         <div className='project3-description'>
           <h5>Introducing Gaming Elite—an eCommerce platform for gaming enthusiasts, crafted collaboratively under my leadership. I directed a team of three developers in harnessing the power of the MERN stack to deliver a seamless user experience.</h5>
-          <h5>My contributions included implementing a conditional rendering system for the retro page and orchestrating API calls from our AtlasDB backend. Leveraging MongoDB, we efficiently managed product catalogs, user profiles, and transactional records.</h5>
+          <h5>My contributions included implementing a conditional rendering system for the retro page and orchestrating API calls from our AtlasDB backend. Leveraging MongoDB, we efficiently managed product catalogsand user profiles.</h5>
           <h5>Through meticulous testing and debugging, I ensured Gaming Elite maintains high-quality standards and optimal performance. This project embodies our commitment to excellence in technology and commerce, tailored for the gaming community.</h5>
         </div>
         <div className='swiper-container'>
