@@ -5,6 +5,7 @@ export default function AboutMe () {
     <div>
       <h1 className='title-label'>About Me</h1>
       <div className='aboutme-container'>
+        <img className='headshot' src={Headshot} alt='Headshot'/>
         <div>
           <h5 className='about-me-main'>Greetings! Welcome to my digital haven, where technology meets creativity, and innovation knows no bounds. My journey into the realm of software engineering was forged amidst the dynamic landscape of the refine fuels industry, where troubleshooting automation systems ignited my passion for problem-solving and sparked a desire for continuous learning.</h5>
 
@@ -18,7 +19,6 @@ export default function AboutMe () {
 
           <h5 className='about-me-main'>Join me on this exhilarating journey as we push the boundaries of what's possible, embrace innovation, and pave the way for a future where technology serves as a catalyst for positive change. Together, let's embark on a voyage of discovery, collaboration, and boundless potential.</h5>
         </div>
-        <img className='headshot' src={Headshot} alt='Headshot'/>
       </div>
     </div>
   )
