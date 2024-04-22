@@ -447,20 +447,20 @@ body {
       
         .swiper-container {
           width: 100vw;
-          height: auto; /* Adjusted height to accommodate variable image height */
-          max-height: auto; /* Set a maximum height to maintain consistency */
+          height: auto; 
+          max-height: auto; 
           margin-bottom: 50px;
-          overflow: hidden; /* Ensure content within swiper container is clipped */
+          overflow: hidden; 
         }
       
         .swiper-slide img {
-          width: auto; /* Adjusted to maintain aspect ratio */
-          max-width: 100%; /* Ensures image does not exceed container width */
-          height: auto; /* Automatically adjusts height to maintain aspect ratio */
-          max-height: 100%; /* Ensures image does not exceed container height */
+          width: auto; 
+          max-width: 100%; 
+          height: auto; 
+          max-height: 100%; 
           border: 1px solid rgb(181, 181, 169);
           border-radius: 2rem;
-          object-fit: cover; /* Ensures image covers entire slide */
+          object-fit: cover; 
         }
       
         .slider-controler .swiper-button-next {

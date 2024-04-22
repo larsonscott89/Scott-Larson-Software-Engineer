@@ -7,7 +7,7 @@ export default function AboutMe () {
       <div className='aboutme-container'>
         <img className='headshot' src={Headshot} alt='Headshot'/>
         <div>
-          <h5 className='about-me-main'>Greetings! Welcome to my digital haven, where technology meets creativity, and innovation knows no bounds. My journey into the realm of software engineering was forged amidst the dynamic landscape of the refine fuels industry, where troubleshooting automation systems ignited my passion for problem-solving and sparked a desire for continuous learning.</h5>
+          <h5 className='about-me-main'>Greetings! Welcome to my digital haven, where technology meets creativity, and innovation knows no bounds. My journey into the realm of software engineering was forged amidst the dynamic landscape of the refined fuels industry, where troubleshooting automation systems ignited my passion for problem-solving and sparked a desire for continuous learning.</h5>
 
           <h5 className='about-me-main'>Hailing from the heart of Texas and now settled in the serene landscapes of Ocala, Florida, I bring with me a wealth of experiences and a relentless drive to excel. My tenure in the refine fuels industry provided me with invaluable insights into the intricacies of automation systems, fostering a deep-rooted appreciation for the synergy between human intellect and technological prowess.</h5>
 
