@@ -1,8 +1,23 @@
+.header {
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-img img {
+  height: 40vh; 
+  width: 100%; 
+  max-width: 100%;
+  margin-top: -40px;
+  object-fit: cover;
+}
+
 .header-img {
-  height: 28vh;
-  width: 103vw;
-  margin-top: -60px;
-  margin-left: -40px;
+  height: 22vh;
+  width: 100vw;
 }
 
 .navbar {
@@ -13,11 +28,11 @@
 }
 
 .menu-bars {
-  margin-top: -10.5rem;
+  margin-top: -18.5rem;
   margin-left: 4rem;
   font-size: 2rem;
   background: none;
-  color: #ccb4b4;
+  color: rgb(232, 232, 232);
 }
 
 .close-button {
@@ -25,7 +40,7 @@
   margin-left: 6rem;
   font-size: 2rem;
   background: none;
-  color: #ccb4b4;
+  color: rgb(232, 232, 232);
 }
 
 .nav-menu {
@@ -55,7 +70,7 @@
   margin-bottom: 10px;
   height: 60px;
   width: 100%;
-  color: #ccb4b4;
+  color: rgb(232, 232, 232);
   text-decoration: none;
   font-size: 26px;
 }
@@ -106,7 +121,7 @@
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
-    color: #ccb4b4;
+    color: rgb(232, 232, 232);
   }
   
   .close-button {
@@ -114,7 +129,7 @@
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
-    color: #ccb4b4;
+    color: rgb(232, 232, 232);
   }
   
   .nav-menu {
@@ -144,7 +159,7 @@
     margin-bottom: 10px;
     height: 60px;
     width: 100%;
-    color: #ccb4b4;
+    color: rgb(232, 232, 232);
     text-decoration: none;
     font-size: 16px;
   }

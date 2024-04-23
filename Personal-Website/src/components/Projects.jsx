@@ -101,9 +101,9 @@ export default function Projects() {
         <h1> Projects </h1>
       </div>
       <div className='projects-intro'>
-        <h5 className='projects-intro'>Welcome to the project section of my portfolio. Here, you'll find a curated list of projects I've undertaken, presented in chronological order. From   the inception of Bartenders Best Friend to the latest creation of BCS Darts, each project represents a significant milestone in my journey as a software engineer.</h5>
-        <h5 className='projects-intro'>Every project description includes links to its corresponding GitHub repository and, if applicable, the deployed website. As any seasoned software engineer knows, a project is never truly finished. Updates and improvements are an integral part of the development process. Therefore, I encourage you to revisit this section periodically to explore the latest enhancements and additions.</h5>
-        <h5 className='projects-intro'>Thank you for visiting, and I hope you find inspiration and insight within these projects.</h5>
+        <p className='projects-intro'>Welcome to the project section of my portfolio. Here, you'll find a curated list of projects I've undertaken, presented in chronological order.</p>
+        <p className='projects-intro'>Every project description includes links to its corresponding GitHub repository and, if applicable, the deployed website. I encourage you to revisit this section periodically to explore the latest enhancements and additions.</p>
+        <hr className='project-divider' />
       </div>
 { /* Project 1 */ }
       <div className='project1-container'>
@@ -112,7 +112,7 @@ export default function Projects() {
         </div>
         <div className='project-description-container'>
         <div className='project1-description'>
-          <h5>"Bartenders Best Friend" is your go-to solution for those moments when you find yourself at a loss for what to order at a restaurant or bar. Leveraging an API call alongside HTML, CSS, and JavaScript, this project empowers users to effortlessly search for a drink either by its name or by specifying a particular type of liquor they desire. Whether you're craving a classic cocktail or exploring new flavors, Bartenders Best Friend provides a curated selection of drinks to suit every taste and occasion.</h5>
+          <p>"Bartenders Best Friend" is your go-to solution for those moments when you find yourself at a loss for what to order at a restaurant or bar. Leveraging an API call alongside HTML, CSS, and JavaScript, this project empowers users to effortlessly search for a drink either by its name or by specifying a particular type of liquor they desire. Whether you're craving a classic cocktail or exploring new flavors, Bartenders Best Friend provides a curated selection of drinks to suit every taste and occasion. <a href='https://github.com/larsonscott89/Drink-Website' target='blank' className='git-link'> GitHub </a></p>
         </div>
         <div className='swiper-container'>
         <Swiper {...swiperSettings}>
@@ -157,7 +157,7 @@ export default function Projects() {
         </div>
         <div className='project-description-container'>
         <div className='project2-description'>
-          <h5>"Ultimate Anime API" is a dynamic website showcasing the seamless integration of JavaScript components on the front-end with a robust Express, MongoDB, and Node.js backend. I've implemented RESTful API fetch calls for CRUD operations, rigorously tested backend routes using Postman, and ensured data integrity with Mongoose-defined schemas for MongoDB collections. This project represents a harmonious blend of front-end and back-end technologies, delivering a seamless user experience.</h5>
+          <p>"Ultimate Anime API" is a dynamic website showcasing the seamless integration of JavaScript components on the front-end with a robust Express, MongoDB, and Node.js backend. I've implemented RESTful API fetch calls for CRUD operations, rigorously tested backend routes using Postman, and ensured data integrity with Mongoose-defined schemas for MongoDB collections. This project represents a harmonious blend of front-end and back-end technologies, delivering a seamless user experience. <a href='https://github.com/larsonscott89/ultimate_anime_API' target='blank' className='git-link'> GitHub </a></p>
         </div>
         <div className='swiper-container'>
         <Swiper {...swiperSettings}>
@@ -200,9 +200,9 @@ export default function Projects() {
         </div>
         <div className='project-description-container'>
         <div className='project3-description'>
-          <h5>Introducing Gaming Elite—an eCommerce platform for gaming enthusiasts, crafted collaboratively under my leadership. I directed a team of three developers in harnessing the power of the MERN stack to deliver a seamless user experience.</h5>
-          <h5>My contributions included implementing a conditional rendering system for the retro page and orchestrating API calls from our AtlasDB backend. Leveraging MongoDB, we efficiently managed product catalogsand user profiles.</h5>
-          <h5>Through meticulous testing and debugging, I ensured Gaming Elite maintains high-quality standards and optimal performance. This project embodies our commitment to excellence in technology and commerce, tailored for the gaming community.</h5>
+          <p>Introducing Gaming Elite—an eCommerce platform for gaming enthusiasts, crafted collaboratively under my leadership. I directed a team of three developers in harnessing the power of the MERN stack to deliver a seamless user experience.</p>
+          <p>My contributions included implementing a conditional rendering system for the retro page and orchestrating API calls from our AtlasDB backend. Leveraging MongoDB, we efficiently managed product catalogsand user profiles.</p>
+          <p>Through meticulous testing and debugging, I ensured Gaming Elite maintains high-quality standards and optimal performance. This project embodies our commitment to excellence in technology and commerce, tailored for the gaming community. <a href='https://github.com/larsonscott89/Gaming-Elite' target='blank' className='git-link'> GitHub </a></p>
         </div>
         <div className='swiper-container'>
         <Swiper {...swiperSettings}>
@@ -245,16 +245,16 @@ export default function Projects() {
         </div>
         <div className='project-description-container'>
         <div className='project4-description'>
-          <h5>Introducing BCS Darts—a dynamic application built on the versatile MERN stack, tailored for dart enthusiasts. At its core, BCS Darts seamlessly integrates authentication for administrative users, ensuring data security and user privacy through bcrypt encryption.</h5>
+          <p>Introducing BCS Darts—a dynamic application built on the versatile MERN stack, tailored for dart enthusiasts. At its core, BCS Darts seamlessly integrates authentication for administrative users, ensuring data security and user privacy through bcrypt encryption.</p>
 
-          <h5>This project encompasses a range of functionalities, including the creation of teams and users via user-friendly forms. Upon submission, team information is seamlessly stored in the database, accessible within the dedicated teams section of the site.</h5>
+          <p>This project encompasses a range of functionalities, including the creation of teams and users via user-friendly forms. Upon submission, team information is seamlessly stored in the database, accessible within the dedicated teams section of the site.</p>
 
-          <h5>Key features include:</h5>
+          <p>Key features include:</p>
 
           <ul>Authentication for administrative users, prioritizing data security with bcrypt encryption.</ul>
           <ul>User-friendly forms facilitating the creation of teams and user profiles.</ul>
           <ul>Seamless integration with the database, ensuring efficient storage and retrieval of team information.</ul>
-          <h5>BCS Darts exemplifies my proficiency in leveraging the MERN stack to develop robust applications tailored to specific user needs. Thank you for considering my work.</h5>
+          <p>BCS Darts exemplifies my proficiency in leveraging the MERN stack to develop robust applications tailored to specific user needs. <a href='https://github.com/larsonscott89/BCS_Darts' target='blank' className='git-link'> GitHub </a></p>
         </div>
         <div className='swiper-container'>
         <Swiper {...swiperSettings}>

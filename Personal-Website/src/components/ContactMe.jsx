@@ -4,8 +4,6 @@ export default function ContactMe() {
   return (
     <div className="contact-page">
       <h1>Welcome to my Contact Page!</h1>
-      <p>Thank you for considering me for a position at your company.</p>
-      <p>I'm excited to discuss potential opportunities with you.</p>
       <div className="meeting-options">
         <p>If you'd like to schedule a meeting with me, please use the following link:</p>
         <a href="https://calendly.com/scottlarson0305/30min" target="_blank" rel="noopener noreferrer">
